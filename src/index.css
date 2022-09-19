@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  border: 2px solid red;
+  margin: 0 auto;
+  min-width: 100px;
+  width: 100%;
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:30vw 900px;
+}
+
+.forms,
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    
+    gap: 10px;
+    width: 25%;
+    height: 400px;
+    min-width: 50px;
+    margin: 0 auto;
+    
+
+}
+.confirmation{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.holdername,
+.card-number-input {
+    height: 30px;
+    border-radius: 5px;
+    border-color: grey;
+    padding-left: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.date-container {
+    display: flex;
+    /* max-width: 200px; */
+    gap: 0px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.date-labels {
+    display: flex;
+    gap: 0px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.date-container input {
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    padding-left: 5px;
+    border-width: 1px;
+
+}
+
+.form-button, .continue-button{
+
+    height: 35px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+
+}
+.confirmation img{
+    margin-bottom: 10px;
+    align-self: center;
+}
+.confirmation h1, .confirmation p{
+    /* border: 2px solid; */
+    margin: 0;
+}
+.continue-button{
+    margin-top: 10px;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
