@@ -134,7 +134,9 @@
     .container {
       min-width: 100px;
       font-size: 1.1em;
-      background-size: 100% 410px;
+      height: 200vmin;
+      background-size: 100% 300px;
+     
      
     }
     .ip-input{
@@ -190,9 +192,14 @@ line-height: 14px;
       /* background-color: aqua; */
       height: 69vh;
       width: 100%;
-      margin: -120px auto;
-      z-index: 0;
+      margin: -250px auto;
+      z-index: -1;
      
+    }
+    .map{
+      height: 69vh;
+      width: 100%;
+      margin: 120px auto;
     }
   }
   

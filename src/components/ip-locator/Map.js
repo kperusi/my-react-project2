@@ -1,6 +1,6 @@
 import React from 'react'
 import { MapContainer, TileLayer,Marker,useMap} from 'react-leaflet'
-import { Icon } from 'leaflet'
+// import { Icon } from 'leaflet'
 import { useEffect } from 'react'
 
 
@@ -18,10 +18,10 @@ export default function Map(props) {
 // const myicon = new Icon({iconUrl:'./images/icon-location.svg' , iconSize:[33,33]})
   
   return (
-    <div>
+    <div id='map'>
 
     
-        <MapContainer id='map' center={props.position} zoom={13} scrollWheelZoom={false}>
+        <MapContainer className='map'  center={props.position} zoom={13} scrollWheelZoom={false}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
