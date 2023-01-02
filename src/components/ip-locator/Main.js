@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import IpInput from "./IpInput";
-import Map from "./Map";
 import Display from "./Display";
+import Map from "./Map";
+
 import "./map.css";
 import { MapContext } from "./MapContext";
 import { useEffect } from "react";
@@ -70,9 +71,10 @@ export default function Main() {
       });
   }, [temp, api_key, api_url]);
 
-  console.log(details.city);
+  console.log(position);
 
   return (
+   
     <MapContext.Provider
       value={{
         position: position,
@@ -84,20 +86,32 @@ export default function Main() {
         isp:details.isp,
       }}
     >
-      <div className="container">
+       <main>
+    <section className="container">
+     
         <IpInput
           getIpNameHandler={getIpNameHandler}
           ip={ip}
           setIpNameHandler={setIpNameHandler}
         />
-        <Display />
-        {details.error ? (
-          <h1 className="error">{details.error}</h1>
-        ) : (
-          <Map position={position} />
-        )}
-      </div>
-    </MapContext.Provider>
+         <Display />
+        
+
+     {/* {details.error ? (
+      <h1 className="error">{details.error}</h1>
+    ) : (
+      <Map position={position} />
+    )} */}
+        </section>
+
+<section className="map-section">
+  <Map position={position} />
+</section>
+
+
+</main >
+    </MapContext.Provider> 
+ 
   );
 }
 
