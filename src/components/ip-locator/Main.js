@@ -7,6 +7,7 @@ import "./map.css";
 import { MapContext } from "./MapContext";
 import { useEffect } from "react";
 import { useReducer } from "react";
+import { HelmetProvider } from "react-helmet-async";
 
 const initials = {
   city: "NY 1001",
@@ -87,6 +88,7 @@ export default function Main() {
       }}
     >
        <main>
+       <HelmetProvider>
     <section className="container">
      
         <IpInput
@@ -108,7 +110,7 @@ export default function Main() {
   <Map position={position} />
 </section>
 
-
+</HelmetProvider>
 </main >
     </MapContext.Provider> 
  
