@@ -24,7 +24,8 @@ export default function Map(props) {
      <Helmet>
       
 {/* <!-- Primary Meta Tags --> */}
-<title>Frontend Mentor | IP Address Tracker</title>
+<title>
+  IP Address Tracker</title>
 <meta name="title" content="IP Address Tracker"/>
 <meta name="description" content="IP address tracker is a web application where users can enter an Ip address and their location is displayed on a map. The map can be zoomed in and zoomed out, showing all the nearby location."/>
 
